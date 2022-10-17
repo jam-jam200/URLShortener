@@ -1,5 +1,5 @@
 .appContainer {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -334,3 +334,112 @@
   font-size: 1.2rem;
   font-family: "Playfair Display", serif;
 }
+
+@media screen and (max-width: 360px) {
+  .inputShortenerContainer {
+    margin: 20px;
+  }
+  .result p {
+    margin-right: 0;
+  }
+  .appContainer {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .inputShortenerContainer {
+    margin: 20px;
+  }
+
+  .result p {
+    margin-right: 0;
+    font-size: 0.85rem;
+  }
+
+  .appContainer {
+    height: 100vh;
+  }
+
+  .result button {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 353px) {
+  .inputShortenerContainer {
+    margin: 20px;
+  }
+
+  .result p {
+    margin-right: 0;
+    font-size: 0.85rem;
+  }
+
+  .appContainer {
+    height: 100vh;
+  }
+
+  .result button {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .inputShortenerContainer {
+    margin: 20px;
+  }
+
+  .result p {
+    margin-right: 0;
+    font-size: 0.85rem;
+  }
+
+  .appContainer {
+    height: 100vh;
+  }
+
+  .result button {
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  .inputShortenerContainer {
+    margin: 20px;
+  }
+
+  .result p {
+    margin-right: 0;
+    font-size: 0.85rem;
+  }
+
+  .appContainer {
+    height: 100vh;
+  }
+
+  .result button {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .inputShortenerContainer {
+    margin: 20px;
+  }
+
+  .result p {
+    margin-right: 0;
+    font-size: 0.85rem;
+  }
+
+  .appContainer {
+    height: 100vh;
+  }
+
+  .result button {
+    width: 60px;
+  }
+}
+
+

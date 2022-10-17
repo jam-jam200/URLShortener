@@ -22,15 +22,14 @@ function Result({ inputValue }) {
         })
         .finally(setLoading(true));
     }
-  }, [inputValue]);
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setCopied(false);
-    }, 2000);
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [copied]);
+     const timer = setTimeout(() => {
+       setCopied(false);
+     }, 2000);
+     return () => {
+       clearTimeout(timer);
+     };
+  }, [inputValue, copied]);
+
 
   if (loading) {
     return <p className="noData">Just a sec, your link is loading...</p>;
@@ -46,7 +45,7 @@ function Result({ inputValue }) {
           <p>{link}</p>
           <CopyToClipboard onCopy={() => setCopied(true)} text={link}>
             <button className={copied ? "copied" : null}>
-              Copy to Clipboard
+              Copy Link
             </button>
           </CopyToClipboard>
         </div>
